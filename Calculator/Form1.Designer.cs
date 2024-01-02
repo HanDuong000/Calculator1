@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtKetQua = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,21 +47,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Số a";
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(191, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(430, 39);
-            this.textBox1.TabIndex = 1;
+            this.txtA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtA.Location = new System.Drawing.Point(191, 46);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(430, 39);
+            this.txtA.TabIndex = 1;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(191, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(430, 39);
-            this.textBox2.TabIndex = 3;
+            this.txtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtB.Location = new System.Drawing.Point(191, 122);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(430, 39);
+            this.txtB.TabIndex = 3;
             // 
             // label2
             // 
@@ -73,13 +73,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Số b";
             // 
-            // textBox3
+            // txtKetQua
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox3.Location = new System.Drawing.Point(191, 217);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(430, 39);
-            this.textBox3.TabIndex = 5;
+            this.txtKetQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtKetQua.Location = new System.Drawing.Point(191, 217);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(430, 39);
+            this.txtKetQua.TabIndex = 5;
             // 
             // label3
             // 
@@ -91,26 +91,27 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Kết quả";
             // 
-            // button1
+            // btnCong
             // 
-            this.button1.Location = new System.Drawing.Point(533, 310);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCong.Location = new System.Drawing.Point(533, 310);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(88, 47);
+            this.btnCong.TabIndex = 6;
+            this.btnCong.Text = "Cộng";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btnCong);
+            this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtB);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Tính toán";
@@ -122,12 +123,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCong;
     }
 }
 
